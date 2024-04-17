@@ -51,8 +51,8 @@ ul, ol {
     letter-spacing: 0.02em; 
 }
 
-.address-link:hover,
-.address-link:focus {
+.address-link-item:hover,
+.address-link-item:focus {
     color: #404bbf;
 }
 
