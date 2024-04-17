@@ -81,7 +81,6 @@ button {
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #ffffff;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background: #4d5ae5;
     font-family: inherit;
 }
@@ -192,6 +191,7 @@ button {
 
 /* --========FOOTER========-- */
 .page-footer {
+    font-family: "Raleway", sans-serif;
     background: #2e2f42;
 }
 
@@ -209,7 +209,7 @@ button {
    color: #f4f4fd;
 }
 
-.page-footer-item {
+.page-footer-text {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
