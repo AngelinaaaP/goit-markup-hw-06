@@ -236,6 +236,7 @@ button {
     letter-spacing: 0.02em;
     color: #2e2f42;
     gap: 24px;
+    margin-bottom: 8px;
 }
 
 .order-list-item-text {
@@ -267,7 +268,6 @@ button {
     text-transform: capitalize;
     color: #2e2f42;
     margin-bottom: 72px;
-
 }
 
 .team-cards {
@@ -302,6 +302,7 @@ button {
 .team-list-item {
     background-color: #ffffff;
     display: block;
+    border-radius: 0px 0px 4px 4px;
 }
 
 /* --========PORTFOLIO========-- */
@@ -309,7 +310,7 @@ button {
     padding-top: 120px;
     padding-bottom: 120px;
     border: 1px solid #e7e9fc;
-    width: ((100% - 48px) / 3);
+    width: calc((100% - 48px) / 3);
 }
 
 .portfolio-title {
@@ -371,6 +372,7 @@ button {
 }
 
 .footer-logo {
+   display: inline-block;
    margin-bottom: 16px;
    font-family: "Raleway", sans-serif;
    font-weight: 700;
@@ -381,7 +383,6 @@ button {
    color: #4d5ae5;
    padding-right: 76px;
    margin-right: 76px;
-   display: inline-block;
 }
 
 .page-footer-text {
