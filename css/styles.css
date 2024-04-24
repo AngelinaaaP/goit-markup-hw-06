@@ -1,8 +1,15 @@
 body {
     font-family: "Roboto", sans-serif;
     color: #434455;
-    background-color: #fff;
+    background-color: #ffffff;
 }
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 /* --========HEADER========-- */
 a {
     text-decoration: none;
@@ -10,8 +17,34 @@ a {
 
 ul, ol {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
+.container {
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.page-header {
+    border-bottom: 1px solid #E7E9FC;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.page-navigation {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    margin-left: 15px;
+}
+
+/*=====LOGO=====*/
 .logo {
     font-family: "Raleway", sans-serif;
     color: #4d5ae5; 
@@ -20,10 +53,18 @@ ul, ol {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-right: 76px;
+    padding-right: 76px;
 }
 
 .logo-part {
     color: #2e2f42;
+}
+
+/*=====NAVIGATION=====*/
+.nav-link {    
+    display: flex; 
+    gap: 40px;
 }
 
 .nav-link-items {
@@ -32,6 +73,8 @@ ul, ol {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    padding: 24px 0;
+    display: block;
 }
 
 .nav-link-items:hover,
@@ -39,16 +82,31 @@ ul, ol {
     color: #404bbf;
 }
 
+/*=====ADRESSA=====*/
 .address-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
     font-style: normal;
+    margin-left: auto;
+}
 
+.address-list {
+    display: flex;
+    gap: 40px;
+    padding: 24px 0;
+    flex-direction: row;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
 }
 
 .address-link-item {
     color: #434455;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em; 
 }
 
 .address-link-item:hover,
@@ -59,6 +117,15 @@ ul, ol {
 /* --========HERO========-- */
 .section-text {
     background: #2e2f42;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    text-align: center;
+    padding: 188px 0;
+    align-items: center;
+    margin: 0 auto;
 }
 
 .main-page-title {
@@ -67,22 +134,40 @@ ul, ol {
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
-    color: #fff;
+    color: #ffffff;
+    max-width: 496px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: auto;
 }
-
+/*=====BUTTON=====*/
 button {
     cursor: pointer;
     font-family: inherit;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 10px;
 }
 
 .main-page-btn {
+    display: block;
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #ffffff;
     background: #4d5ae5;
-    font-family: inherit;
+    border-radius: 4px;
+    border: none;
+    height: 56px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background: #4d5ae5;
+    text-align: center;
+    width: 169px;
+    margin: 48px auto 0;
 }
 
 .main-page-btn:hover,
@@ -92,6 +177,37 @@ button {
 }
 
 /* --========BENEFITS========-- */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.text-section-it {
+    padding: 120px 0;
+}
+
+.text-section-it > p {
+    text-align: center;
+}
+
+.order-list {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.order-list-item {
+    width: calc((100% - 72px) / 4);
+}
+
 .order-title {
    font-weight: 700;
    font-size: 36px;
@@ -115,9 +231,15 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    text-align: left;
 }
 
 /* --========SPECIALISTS========- */
+.section-team {
+    background-color: #f4f4fd;
+    padding: 120px 0;
+}
+
 .team-title {
     font-weight: 700;
     font-size: 36px;
@@ -126,10 +248,18 @@ button {
     text-align: center;
     text-transform: capitalize;
     color: #2e2f42;
+    margin-bottom: 72px;
 }
 
-.section-team {
-    background-color: #f4f4fd;
+.team-cards {
+    padding: 32px 0;
+    text-align: center;
+}
+
+.team-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
 }
 
 .team-list-item-title {
@@ -142,7 +272,6 @@ button {
 }
 
 .team-list-item-text {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -155,6 +284,12 @@ button {
 }
 
 /* --========PORTFOLIO========-- */
+.portfolio-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    border: 1px solid #e7e9fc;
+}
+
 .portfolio-title {
     font-weight: 700;
     font-size: 36px;
@@ -163,10 +298,26 @@ button {
     text-align: center;
     text-transform: capitalize;
     color: #2e2f42;
+    margin-bottom: 72px;
 }
 
-.section-portfolio {
+.portfolio-thirt {
     background-color: #f4f4fd;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.portfolio-list-item {
+    background-color: #ffffff;
+    width: calc((100% - 48px) / 3)
+}
+
+.portfol-cards {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 
 .portfolio-list-item-title {
@@ -175,6 +326,7 @@ button {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .portfolio-list-item-text {
@@ -185,17 +337,20 @@ button {
     color: #434455;
 }
 
-.portfolio-list-item {
-    background-color: #ffffff;
-}
-
 /* --========FOOTER========-- */
 .page-footer {
-    font-family: "Raleway", sans-serif;
     background: #2e2f42;
+    padding: 100px 0;
+    text-align: left;
+}
+
+.footer-logo-part {
+    color: #f4f4fd;
 }
 
 .footer-logo {
+   margin-bottom: 16px;
+   display: inline-block;
    font-family: "Raleway", sans-serif;
    font-weight: 700;
    font-size: 18px;
@@ -203,10 +358,8 @@ button {
    letter-spacing: 0.03em;
    text-transform: uppercase;
    color: #4d5ae5;
-}
-
-.footer-logo-part {
-   color: #f4f4fd;
+   padding-right: 76px;
+   margin-right: 76px;
 }
 
 .page-footer-text {
@@ -215,4 +368,5 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
+    width: 264px;
 }
