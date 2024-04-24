@@ -16,7 +16,7 @@ a {
 }
 
 p, h1, h2, h3, h4, h5, h6 {
-    margin: 0;;
+    margin: 0;
 }
 
 ul, ol {
@@ -295,7 +295,7 @@ button {
 
 .team-list-item {
     background-color: #ffffff;
-    width: calc((100% - 82px) / 4);
+    width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
 }
 
