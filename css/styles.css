@@ -15,6 +15,10 @@ a {
     text-decoration: none;
 }
 
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;;
+}
+
 ul, ol {
     list-style: none;
     padding: 0;
@@ -25,7 +29,6 @@ ul, ol {
     width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
-    display: flex;
 }
 
 .page-header {
@@ -40,13 +43,6 @@ ul, ol {
 .page-navigation {
     display: flex;
     align-items: center;
-    margin: auto;
-    margin-left: 15px;
-}
-
-.nav-items {
-    display: flex;
-    gap: 40px;
 }
 
 /*=====LOGO=====*/
@@ -59,7 +55,6 @@ ul, ol {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-right: 76px;
-    padding-right: 76px;
 }
 
 .logo-part {
@@ -79,6 +74,7 @@ ul, ol {
     letter-spacing: 0.02em;
     color: #2e2f42;
     padding: 24px 0;
+    display: block;
 }
 
 .nav-link-items:hover,
@@ -88,11 +84,6 @@ ul, ol {
 
 /*=====ADRESSA=====*/
 .address-link {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
     font-style: normal;
     margin-left: auto;
 }
@@ -111,6 +102,10 @@ ul, ol {
 }
 
 .address-link-item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     color: #434455;
 }
 
@@ -129,7 +124,7 @@ ul, ol {
 .section-text {
     background: #2e2f42;
     font-family: "Roboto", sans-serif;
-    font-weight: 700px;
+    font-weight: 700;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
@@ -213,7 +208,6 @@ button {
 
 .order-list {
     display: flex;
-    flex-direction: row;
     gap: 24px;
 }
 
@@ -279,7 +273,6 @@ button {
 .team-list {
     display: flex;
     gap: 24px;
-    justify-content: center; 
 }
 
 .team-list-item-title {
@@ -302,7 +295,7 @@ button {
 
 .team-list-item {
     background-color: #ffffff;
-    display: block;
+    width: calc((100% - 82px) / 4);
     border-radius: 0px 0px 4px 4px;
 }
 
@@ -310,8 +303,6 @@ button {
 .portfolio-section {
     padding-top: 120px;
     padding-bottom: 120px;
-    border: 1px solid #e7e9fc;
-    width: calc((100% - 48px) / 3);
 }
 
 .portfolio-title {
@@ -326,7 +317,6 @@ button {
 }
 
 .portfolio-thirt {
-    background-color: #f4f4fd;
     display: flex;
     flex-wrap: wrap;
     column-gap: 24px;
@@ -334,8 +324,7 @@ button {
 }
 
 .portfolio-list-item {
-    background-color: #ffffff;
-    width: ((100% - 48px) / 3);
+    width: calc((100% - 48px) / 3);
 }
 
 .portfol-cards {
@@ -365,7 +354,6 @@ button {
 .page-footer {
     background: #2e2f42;
     padding: 100px 0;
-    text-align: left;
 }
 
 .footer-logo-part {
@@ -382,8 +370,6 @@ button {
    letter-spacing: 0.03em;
    text-transform: uppercase;
    color: #4d5ae5;
-   padding-right: 76px;
-   margin-right: 76px;
 }
 
 .page-footer-text {
