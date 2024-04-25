@@ -25,6 +25,10 @@ ul, ol {
     margin: 0;
 }
 
+img {
+    display: block;
+}
+
 .container {
     width: 1158px;
     padding: 0 15px;
@@ -195,7 +199,6 @@ button {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-    margin-bottom: 8px;
 }
 
 .text-section-it {
