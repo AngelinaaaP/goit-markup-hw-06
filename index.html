@@ -402,13 +402,15 @@
           <form class="form-footer">
             <label class="subscribe-paragraph" for="form-subscribe-footer">Subscribe</label>
             <input class="form-subscribe-footer" name="form-subscribe" id="form-subscribe-footer" placeholder="E-mail">
+          </form>
         </div>
         <div class="footer-button">
-          <button class="button-footer" type="submit">Subscribe
+          <form class="form-footer">
+           <button class="button-footer" type="submit">Subscribe
             <svg class="social-icoms-telegram social-icoms-footer" width="24" height="24">
               <use href="./images/icons.svg#icon-frame-button"></use>
             </svg>
-          </button>
+           </button>
           </form>
         </div>
 
@@ -458,7 +460,7 @@
           <label class="modal-form-label" for="user-comment">Comment</label> 
           <textarea class="modal-form-textarea" id="user-comment" name="user-comment" placeholder="Text input"></textarea>
         </div>
-        <div class="modal-form-privacypolicy-input visually-hidden" type="checkbox" name="user-privacy" id="user-privacy" value="true" required />
+        <div class="modal-form-privacypolicy-input visually-hidden" type="checkbox" name="user-privacy" id="user-privacy" value="true" required>
         <label class="modal-form-privacypolicy-label" for="user-privacy">
           <span class="modal-form-span-svg">
             <svg class="checked-svg" width="10" height="8">
@@ -469,9 +471,9 @@
           <a class="modal-form--privacypolicy-link" href="./index.html">Privacy Policy
           </a>
         </label>
+        </div>
       </div>
       <button class="modal-form-button" type="submit">Send</button>
-     </form>
     </div>
   </div>
  </body>
