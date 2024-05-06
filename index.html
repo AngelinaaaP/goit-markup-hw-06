@@ -400,7 +400,7 @@
 
         <div class="form-footer-container">
           <p class="subscribe-title-text">Subscribe</p>
-           <form action="" class="form-footer">
+           <form class="form-footer">
             <label class="subscribe-paragraph" for="form-subscribe-footer">
               <input class="form-subscribe-footer" name="form-subscribe" type="email" id="form-subscribe-footer" placeholder="E-mail">
             </label>
@@ -431,7 +431,7 @@
          Leave your contacts and we will call you back
       </p>
     <form class="form">
-      <div class="modal-form">
+      <form class="modal-form">
         <div class="modal-form-user-input">
           <label class="modal-form-label" for="user-name">Name</label>
           <div class="modal-form-input-wrapper">
@@ -463,10 +463,11 @@
           <label class="modal-form-label" for="user-comment">Comment</label> 
           <textarea class="modal-form-textarea" id="user-comment" name="user-comment" placeholder="Text input"></textarea>
         </div>
+      </form>
         
         <div class="checkbox-field">
-          <input class="checkbox visually-hidden" type="checkbox" name="privacy" id="use-privacy" value="true">
-            <lavel class="label" for="user-praivacy">
+          <input class="checkbox visually-hidden" type="checkbox" name="privacy" id="use-privacy" value="true" />
+          <lavel class="label" for="user-praivacy">
               <span class="custon-checkbox">
                 <svg class="custon-checkbox-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-checkbox-1"></use>
@@ -474,14 +475,11 @@
               </span>
               I accept the terms and conditions of the 
               <a class="privacy-link" href="">Privacy Policy</a>
-            </lavel>
-
-          </input>
+          </lavel>
         </div>
       </div>
       <button class="modal-form-button" type="submit">Send</button>
     </div>
-    </form>
   </div>
  </body>
 </html> 
