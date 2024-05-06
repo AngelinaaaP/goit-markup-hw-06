@@ -195,7 +195,6 @@ button {
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: row;
-    gap: 10px;
 }
 
 .main-page-btn {
@@ -558,6 +557,10 @@ button {
     color: #ffffff;
 }
 
+.footer-social-container {
+    margin-right: auto;
+}
+
 /*======Subscribe=====*/
 .footer-container {
     display: flex;
@@ -581,7 +584,6 @@ button {
 
 .form-footer {
     display: flex;
-    flex-direction: column;
     align-items: center;
     gap: 24px;
 }
@@ -596,14 +598,17 @@ button {
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.04em;
+    padding-left: 16px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    color: #ffffff;
+}
+.form-subscribe-footer::placeholder {
     color: #ffffff;
 }
 
 .button-footer {
     font-family: "Roboto", sans-serif;
     display: flex;
-    gap: 16px;
     min-width: 165px;
     height: 40px;
     border-radius: 4px;
@@ -639,7 +644,7 @@ button {
     background-color: rgba(46, 47, 66, 0.4);
     opacity: 0;
     visibility: hidden;
-    position: none;
+    pointer-events: none;
     pointer-events: none;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -707,7 +712,6 @@ button {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
-    margin-top: 32px;
     margin-bottom: 16px;
 }
 
@@ -717,7 +721,6 @@ button {
 
 .modal-form-user-input {
     margin-bottom: 8px;
-    position: relative;
 }
 
 .modal-form-label {
@@ -748,10 +751,6 @@ button {
     border-radius: 4px;
     background-color: transparent;
     outline: transparent;
-    box-shadow:
-        0 1px 1px 0 rgba(0, 0, 0, 0.14),
-        0 1px 3px 0 rgba(0, 0, 0, 0.12),
-        0 2px 1px 0 rgba(0, 0, 0, 0.2);
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -792,10 +791,6 @@ button {
     border: 1px solid rgba(46, 47, 66, 0.4);
     background-color: transparent;
     outline: transparent;
-    box-shadow:
-        0 1px 1px 0 rgba(0, 0, 0, 0.14),
-        0 1px 3px 0 rgba(0, 0, 0, 0.12),
-        0 2px 1px 0 rgba(0, 0, 0, 0.2);
     padding: 8px 16px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -817,11 +812,11 @@ button {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
+    color: #8e8f99;
 }
 
 .checkbox-field {
     margin-bottom: 24px;
-    margin: 24px;
 }
 
 .custon-checkbox {
@@ -834,6 +829,7 @@ button {
     border-radius: 2px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: transparent;
+    margin-right: 8px;
 }
 
 .privacy-link {
@@ -861,7 +857,6 @@ button {
     margin-bottom: 24px;
     min-width: 169px;
     height: 56px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background-color: #4d5ae5;
     border: none;
     margin: 0 auto;
