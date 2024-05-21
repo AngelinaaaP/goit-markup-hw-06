@@ -1262,7 +1262,6 @@ button {
         text-align: center;
         color: #ffffff;
         max-width: 496px;
-        height: 129px;
         align-items: flex-start;
         justify-content: flex-start;
         margin: auto; 
@@ -1272,8 +1271,6 @@ button {
         cursor: pointer;
         font-family: inherit;
         display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
         flex-direction: row;
     }
 
